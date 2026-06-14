@@ -2,11 +2,23 @@ name: hello world
 on: workflow_dispatch
 
 jobs:
-  hello:
+  build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: hello
+      - name: build
         run: echo "welcome to github action course"
+
+  test:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: test
+        run: echo "yes"
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+     - name: deploy
+       run: echo "deploy"
+  
     
   
