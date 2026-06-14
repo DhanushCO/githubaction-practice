@@ -21,6 +21,14 @@ jobs:
     steps:
      - name: deploy
        run: echo "deploy"
+
+  html:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+      - name: print html
+        run: cat index.html
   
     
   
